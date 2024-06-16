@@ -18,11 +18,14 @@ const progress = ((await getSponsoredAmount()) / goalAmount) * 100;
 ---
 
 <div
-  class="max-w-[930px] w-full h-[400px] flex flex-col sm:flex-row justify-center items-center relative text-center"
+  class="max-w-[930px] relative sm:h-[400px] px-24 gap-6 sm:gap-12 sm:px-6 py-4 w-full h-auto flex flex-col sm:flex-row justify-center items-center text-center"
 >
   <img class="h-full" src="/8/assets/beer.webp" />
-  <img class="ml-16 w-[200px] mr-[150px]" src="/8/assets/chat-bubble.webp" />
-  <div class="flex flex-col items-centr justfiy-center gap-4">
+  <div class="ml-8 relative z-20 flex flex-col gap-y-6">
+    <img class="w-[200px] mr-[150px]" src="/8/assets/chat-bubble-2.webp" />
+    <img class="ml-8 w-[200px] mr-[150px]" src="/8/assets/chat-bubble.webp" />
+  </div>
+  <div class="flex flex-col z-20 items-center relative justfiy-center gap-4">
     <p>our budget progress</p>
     <h2 class="font-advent text-[2rem] sm:text-[3.5rem]">
       {progress.toFixed(2)}%
@@ -37,4 +40,12 @@ const progress = ((await getSponsoredAmount()) / goalAmount) * 100;
       to support us
     </a>
   </div>
+  <img
+    class="w-[300px] relative sm:absolute sm:top-1/2 sm:right-48 sm:-translate-y-1/2"
+    src="/8/assets/camp.svg"
+  />
+  <img
+    class="w-[90%] relative hidden sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-y-1/2 sm:-translate-x-1/2"
+    src="/8/assets/line.svg"
+  />
 </div>
