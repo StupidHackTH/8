@@ -5,7 +5,8 @@ export default {
 		extend: {
 			fontFamily: {
 				workbench: ["Workbench", "sans-serif"],
-				plex: ["IBM Plex Sans Thai Looped"],
+				advent: ["Advent Pro"],
+				arimo: ["Arimo"],
 			},
 		},
 	},
