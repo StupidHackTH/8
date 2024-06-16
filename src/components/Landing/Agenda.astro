@@ -1,0 +1,56 @@
+---
+    import { agenda } from './agenda'
+---
+
+<div class="flex flex-col gap-y-9 w-[854px] text-xl">
+    <p>welcome all silly ideas and weird people, to create something useless and enjoy a snack break
+        we’re here to have 🦷
+    </p>
+    <div class="flex gap-x-36">
+        <span>
+            13 July 2024
+        </span>
+        <div class="flex flex-col gap-y-9">
+            {
+                agenda['13 July 2024'].map( item => (
+                    <span>
+                        {item.time}
+                    </span>
+                ))
+            }
+        </div>
+        <div class="flex flex-col gap-y-9">
+            {
+                agenda['13 July 2024'].map( item => (
+                    <span>
+                        {item.title}
+                    </span>
+                ))
+            }
+        </div>
+    </div>
+    <div class="flex gap-x-36">
+        <span>
+            14 July 2024
+        </span>
+        <div class="flex flex-col gap-y-9">
+            {
+                agenda['14 July 2024'].map( item => (
+                    <span>
+                        {item.time}
+                    </span>
+                ))
+            }
+        </div>
+        <div class="flex flex-col gap-y-9">
+            {
+                agenda['14 July 2024'].map( item => (
+                    <span>
+                        {item.title}
+                    </span>
+                ))
+            }
+        </div>
+    </div>
+    </div>
+</div>
