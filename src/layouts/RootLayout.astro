@@ -24,13 +24,13 @@ const { title, description } = Astro.props;
   <body>
     <Navbar />
     <div class="flex flex-col items-center py-[120px] gap-y-[120px]">
-		<slot />
-	</div>
-	<Footer />
+      <slot />
+    </div>
+    <Footer />
   </body>
 </html>
 <style is:global>
-  @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Arimo:ital,wght@0,400..700;1,400..700&family=Workbench&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Arimo:ital,wght@0,400..700;1,400..700&family=Workbench&display=swap");
 
   @tailwind base;
   @tailwind components;
