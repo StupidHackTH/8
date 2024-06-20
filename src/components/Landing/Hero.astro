@@ -1,26 +1,24 @@
 ---
-import { base } from "@/lib/airtable";
+import { progress } from "../sponsor";
+import Beer from "./Beer.astro";
+// pls -> 0-50
+// heh -> 50-75
+// sparkly -> 75-100
 
-const goalAmount = 100_000;
-
-async function getSponsoredAmount() {
-  let amount = 0;
-  const records = await base("sponsors").select().all();
-
-  records.forEach((record) => {
-    amount += +(record.get("Amount") ?? 0);
-  });
-
-  return amount;
-}
-
-const progress = ((await getSponsoredAmount()) / goalAmount) * 100;
+const progressCharacter =
+  progress < 50 ? "pls" : progress < 75 ? "heh" : "sparkly";
 ---
 
 <div
   class="max-w-[930px] relative sm:h-[400px] px-24 gap-6 sm:gap-12 sm:px-6 py-4 w-full h-auto flex flex-col sm:flex-row justify-center items-center text-center"
 >
-  <img class="h-full" src="/8/assets/beer.webp" />
+  <div class="relative w-96 h-auto">
+    <Beer progress={progress} />
+    <img
+      class="w-24 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+      src={`/8/assets/beer/${progressCharacter}.svg`}
+    />
+  </div>
   <div class="ml-8 relative z-20 flex flex-col gap-y-6">
     <img class="w-[200px] mr-[150px]" src="/8/assets/chat-bubble-2.webp" />
     <img class="ml-8 w-[200px] mr-[150px]" src="/8/assets/chat-bubble.webp" />
