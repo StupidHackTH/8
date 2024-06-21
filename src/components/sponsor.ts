@@ -52,6 +52,17 @@ const sponsors: Record<SponsorType, Sponsor[]> = {
   "Non-Monetary": [],
 };
 
+export const individualSponsors = [
+  {
+    name: "bier.bbbb",
+    amount: 69.69,
+  },
+  {
+    name: "ChunGPT",
+    amount: 888,
+  },
+];
+
 function getSponsors(type: SponsorType): Sponsor[] {
   return sponsors[type];
 }
