@@ -67,6 +67,13 @@ export const sponsors: SponsorData = {
   ],
   "Non-Monetary": [
     {
+      id: "esc",
+      name: "Engineering Student Committee",
+      logo: "/assets/sponsors/esc.png",
+      link: "https://www.instagram.com/escchula/",
+      item: "Venue",
+    },
+    {
       id: "kaoduen",
       name: "น้ำดื่มเข้าเดือน",
       logo: "/assets/sponsors/kaoduen.png",
