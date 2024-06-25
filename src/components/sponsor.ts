@@ -13,9 +13,12 @@ export interface Sponsor {
   name: string;
   logo: string | null;
   link: string;
+  item?: string;
 }
 
-const sponsors: Record<SponsorType, Sponsor[]> = {
+export type SponsorData = Record<SponsorType, Sponsor[]>;
+
+export const sponsors: SponsorData = {
   Graab: [
     {
       id: "aona",
@@ -48,8 +51,36 @@ const sponsors: Record<SponsorType, Sponsor[]> = {
       link: "https://www.facebook.com/borntodev",
     },
   ],
-  Waii: [],
-  "Non-Monetary": [],
+  Waii: [
+    {
+      id: "gaijin",
+      name: "ไก่จินอินเจแปน",
+      logo: "/assets/sponsors/gaijin.png",
+      link: "https://www.facebook.com/gaijininjapan.blog",
+    },
+    {
+      id: "wawasabii",
+      name: "wawasabii",
+      logo: "/assets/sponsors/wawasabii.png",
+      link: "https://wawasabii.com/",
+    },
+  ],
+  "Non-Monetary": [
+    {
+      id: "kaoduen",
+      name: "น้ำดื่มเข้าเดือน",
+      logo: "/assets/sponsors/kaoduen.png",
+      link: "https://instagram.com/kaoduean.water",
+      item: "Water Bottle",
+    },
+    {
+      id: "iph",
+      name: "Intania Production House",
+      logo: "/assets/sponsors/iph.png",
+      link: "https://www.instagram.com/intania_production_house/",
+      item: "Photo Booth",
+    },
+  ],
 };
 
 export const individualSponsors = [

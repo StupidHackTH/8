@@ -1,12 +1,10 @@
 ---
 import SponsorList from "./List";
-import { getSponsors } from "../../sponsor";
-
-const graabSponsors = getSponsors("Graab");
+import { sponsors } from "../../sponsor";
 ---
 
 <section class="min-h-screen" id="sponsor">
   <div class="flex flex-col max-w-xl mx-auto w-full">
-    <SponsorList client:load sponsors={graabSponsors} />
+    <SponsorList client:load sponsors={sponsors} />
   </div>
 </section>

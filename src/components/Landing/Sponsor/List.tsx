@@ -1,8 +1,12 @@
-import { individualSponsors, type Sponsor } from "../../sponsor";
+import {
+  individualSponsors,
+  type Sponsor,
+  type SponsorData,
+} from "../../sponsor";
 
 export default function SponsorList({
   sponsors,
-}: Readonly<{ sponsors: Sponsor[] }>) {
+}: Readonly<{ sponsors: SponsorData }>) {
   return (
     <div className="mx-4 flex flex-col gap-y-8">
       <h2 className="font-workbench text-2xl font-bold">
@@ -12,7 +16,7 @@ export default function SponsorList({
         thank you for your support!
       </p>
       <div className="grid w-full grid-cols-3 items-center justify-center gap-8">
-        {sponsors.map((sponsor: Sponsor) => (
+        {sponsors["Graab"].map((sponsor: Sponsor) => (
           <div
             key={sponsor.id}
             className="h-auto w-full transition-all duration-500 ease-in-out hover:shadow-lg"
@@ -24,6 +28,43 @@ export default function SponsorList({
                 className="w-full object-contain"
               />
             </a>
+          </div>
+        ))}
+      </div>
+      <div className="grid w-full grid-cols-5 items-center justify-center gap-8">
+        {sponsors["Waii"].map((sponsor: Sponsor) => (
+          <div
+            key={sponsor.id}
+            className="h-auto w-full transition-all duration-500 ease-in-out hover:shadow-lg"
+          >
+            <a href={sponsor.link} rel="noopener noreferrer">
+              <img
+                src={`/8/${sponsor.logo}` ?? "/8/assets/placeholder.png"}
+                alt={sponsor.name}
+                className="w-full object-contain"
+              />
+            </a>
+          </div>
+        ))}
+      </div>
+      <h2 className="font-workbench text-2xl font-bold">
+        Non-monetary sponsorship
+      </h2>
+
+      <div className="grid w-full grid-cols-5 items-center justify-center gap-8">
+        {sponsors["Non-Monetary"].map((sponsor: Sponsor) => (
+          <div
+            key={sponsor.id}
+            className="h-auto w-full transition-all duration-500 ease-in-out hover:shadow-lg"
+          >
+            <a href={sponsor.link} rel="noopener noreferrer">
+              <img
+                src={`/8/${sponsor.logo}` ?? "/8/assets/placeholder.png"}
+                alt={sponsor.name}
+                className="w-full object-contain"
+              />
+            </a>
+            <p className="text-center text-sm">{sponsor.item}</p>
           </div>
         ))}
       </div>
