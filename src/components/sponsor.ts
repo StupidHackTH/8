@@ -61,6 +61,7 @@ export const sponsors: SponsorData = {
       name: "Lunar Café",
       logo: "/assets/sponsors/lunar cafe.png",
       link: "https://www.facebook.com/lunarcafebyusagiice/",
+      item: "Snacks",
     },
     {
       id: "IBGL",
@@ -98,6 +99,20 @@ export const sponsors: SponsorData = {
       logo: "/assets/sponsors/iph.png",
       link: "https://www.instagram.com/intania_production_house/",
       item: "Photo Booth",
+    },
+    {
+      id: "wawasabii",
+      name: "wawasabii",
+      logo: "/assets/sponsors/wawasabii.png",
+      link: "https://wawasabii.com/",
+      item: "Snacks",
+    },
+    {
+      id: "lunar",
+      name: "Lunar Café",
+      logo: "/assets/sponsors/lunar cafe.png",
+      link: "https://www.facebook.com/lunarcafebyusagiice/",
+      item: "Snacks",
     },
   ],
 };
