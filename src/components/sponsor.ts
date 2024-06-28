@@ -59,7 +59,7 @@ export const sponsors: SponsorData = {
     {
       id: "lunar",
       name: "Lunar Café",
-      logo: "/assets/sponsors/lunar cafe.png",
+      logo: "/assets/sponsors/lunarcafe.jpg",
       link: "https://www.facebook.com/lunarcafebyusagiice/",
       item: "Snacks",
     },
@@ -110,7 +110,7 @@ export const sponsors: SponsorData = {
     {
       id: "lunar",
       name: "Lunar Café",
-      logo: "/assets/sponsors/lunar cafe.png",
+      logo: "/assets/sponsors/lunarcafe.jpg",
       link: "https://www.facebook.com/lunarcafebyusagiice/",
       item: "Snacks",
     },
