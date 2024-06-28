@@ -50,6 +50,24 @@ export const sponsors: SponsorData = {
       logo: "/assets/sponsors/borntodev.png",
       link: "https://www.facebook.com/borntodev",
     },
+    {
+      id: "wawasabii",
+      name: "wawasabii",
+      logo: "/assets/sponsors/wawasabii.png",
+      link: "https://wawasabii.com/",
+    },
+    {
+      id: "lunar",
+      name: "Lunar Café",
+      logo: "/assets/sponsors/lunar cafe.png",
+      link: "https://www.facebook.com/lunarcafebyusagiice/",
+    },
+    {
+      id: "IBGL",
+      name: "Institute of Board Games for Learning",
+      logo: "/assets/sponsors/ibgl.png",
+      link: "https://www.facebook.com/play.ibgl/",
+    },
   ],
   Waii: [
     {
@@ -57,12 +75,6 @@ export const sponsors: SponsorData = {
       name: "ไก่จินอินเจแปน",
       logo: "/assets/sponsors/gaijin.png",
       link: "https://www.facebook.com/gaijininjapan.blog",
-    },
-    {
-      id: "wawasabii",
-      name: "wawasabii",
-      logo: "/assets/sponsors/wawasabii.png",
-      link: "https://wawasabii.com/",
     },
   ],
   "Non-Monetary": [
