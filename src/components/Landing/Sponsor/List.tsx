@@ -41,7 +41,7 @@ export default function SponsorList({
               <img
                 src={`/8/${sponsor.logo}` ?? "/8/assets/placeholder.png"}
                 alt={sponsor.name}
-                className="w-full object-contain"
+                className="w-full rounded-full object-contain"
               />
             </a>
           </div>
