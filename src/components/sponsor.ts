@@ -83,6 +83,12 @@ export const sponsors: SponsorData = {
       logo: "/assets/sponsors/gaijin.png",
       link: "https://www.facebook.com/gaijininjapan.blog",
     },
+    {
+      id: "sornwinth",
+      name: "สวนสินพุทธ ใจรักษ์จันทร์",
+      logo: "/assets/sponsors/sornwinth.png",
+      link: "https://sornwinth.com",
+    },
   ],
   "Non-Monetary": [
     {
