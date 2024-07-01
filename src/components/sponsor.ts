@@ -69,6 +69,12 @@ export const sponsors: SponsorData = {
       logo: "/assets/sponsors/ibgl.png",
       link: "https://www.facebook.com/play.ibgl/",
     },
+    {
+      id: "Catalyzt",
+      name: "Catalyzt Tech",
+      logo: "/assets/sponsors/catalyzt.png",
+      link: "https://catalyzt.tech/",
+    },
   ],
   Waii: [
     {
