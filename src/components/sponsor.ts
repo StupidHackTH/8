@@ -75,6 +75,18 @@ export const sponsors: SponsorData = {
       logo: "/assets/sponsors/catalyzt.png",
       link: "https://catalyzt.tech/",
     },
+    {
+      id: "showdownspace",
+      name: "showdown.space",
+      logo: "/assets/sponsors/showdownspace.png",
+      link: "https://showdown.space/",
+    },
+    {
+      id: "poom",
+      name: "Poom",
+      logo: "/assets/sponsors/poom.png",
+      link: "https://poom.dev",
+    },
   ],
   Waii: [
     {
