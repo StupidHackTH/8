@@ -150,6 +150,10 @@ export const individualSponsors = [
     name: "ChunGPT",
     amount: 888,
   },
+  {
+    name: "modhanami",
+    amount: 1270,
+  },
 ];
 
 function getSponsors(type: SponsorType): Sponsor[] {
