@@ -21,6 +21,24 @@ export type SponsorData = Record<SponsorType, Sponsor[]>;
 export const sponsors: SponsorData = {
   Graab: [
     {
+      id: "9arm",
+      name: "9Arm",
+      logo: "/assets/sponsors/9arm.jpg",
+      link: "https://www.facebook.com/castby9arm",
+    },
+    {
+      id: "donkung",
+      name: "donkung",
+      logo: "/assets/sponsors/donkung.jpeg",
+      link: "https://youtu.be/dQw4w9WgXcQ",
+    },
+    {
+      id: "aona",
+      name: "AONA",
+      logo: "/assets/sponsors/aona.png",
+      link: "https://aona.co.th/",
+    },
+    {
       id: "aona",
       name: "AONA",
       logo: "/assets/sponsors/aona.png",
