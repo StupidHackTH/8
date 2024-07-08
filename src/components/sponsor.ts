@@ -39,12 +39,6 @@ export const sponsors: SponsorData = {
       link: "https://aona.co.th/",
     },
     {
-      id: "aona",
-      name: "AONA",
-      logo: "/assets/sponsors/aona.png",
-      link: "https://aona.co.th/",
-    },
-    {
       id: "kaoduen",
       name: "น้ำดื่มเข้าเดือน",
       logo: "/assets/sponsors/kaoduen.png",
