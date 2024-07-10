@@ -63,6 +63,12 @@ export const sponsors: SponsorData = {
       link: "https://www.facebook.com/borntodev",
     },
     {
+      id: "sth",
+      name: "สยามถนัดแฮก",
+      logo: "/assets/sponsors/sth.png",
+      link: "https://sth.sh/",
+    },
+    {
       id: "wawasabii",
       name: "wawasabii",
       logo: "/assets/sponsors/wawasabii.png",
