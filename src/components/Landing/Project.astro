@@ -1,0 +1,42 @@
+---
+import { projects } from "../project";
+
+function formatLink(link: string) {
+  const newLink = link.replace(/(^\w+:|^)\/\//, "").replace("www.", "");
+
+  if (newLink.length > 32) {
+    return `${newLink.slice(0, 32)}...`;
+  }
+  return newLink;
+}
+---
+
+<div class="flex flex-col items-center gap-4">
+  <h2 class="font-workbench text-2xl font-bold">Projects</h2>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl w-full mx-auto px-2 lg:grid-cols-3"
+  >
+    {
+      projects.map((project) => (
+        <a
+          href={project.link}
+          class="bg-white shadow-md transition-all hover:shadow-lg duration-500 ease-in-out p-4 rounded-lg flex flex-col gap-4 group"
+        >
+          <img
+            src={`/8${project.thumbnail}`}
+            alt={project.name}
+            class="w-full h-48 object-contain rounded-sm"
+          />
+          <div class="flex flex-col gap-2">
+            <h2 class="text-xl font-bold">{project.name}</h2>
+            <p class="text-gray-600 text-sm">{project.teamName}</p>
+            <p class="text-gray-400 text-xs underline group-hover:no-underline text-clip w-48">
+              {formatLink(project.link)}
+            </p>
+            <p class="text-gray-600">{project.description}</p>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</div>

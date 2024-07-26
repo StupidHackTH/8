@@ -1,4 +1,4 @@
-import { base } from "@/lib/airtable";
+// import { base } from "@/lib/airtable";
 
 type SponsorType = "Graab" | "Waii" | "Non-Monetary";
 
@@ -181,14 +181,15 @@ function getSponsors(type: SponsorType): Sponsor[] {
 const goalAmount = 100_000;
 
 async function getSponsoredAmount() {
-  let amount = 0;
-  const records = await base("sponsors").select().all();
+  // let amount = 0;
+  // const records = await base("sponsors").select().all();
 
-  records.forEach((record) => {
-    amount += +(record.get("Amount") ?? 0);
-  });
+  // records.forEach((record) => {
+  //   amount += +(record.get("Amount") ?? 0);
+  // });
 
-  return amount;
+  // return amount;
+  return 118_260;
 }
 
 const progress = ((await getSponsoredAmount()) / goalAmount) * 100;
